@@ -327,8 +327,15 @@ section { padding: 4rem 1.5rem; }
   width: auto;
   display: block;
 }
+.logo-text {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--primary);
+}
+.logo-text span { color: var(--accent); }
 @media (max-width: 768px) {
-  .logo img { height: 40px; }
+  .logo img { height: 36px; }
+  .logo-text { font-size: 1rem; }
 }
 .nav-cta { display: flex; align-items: center; gap: 1rem; }
 .nav-cta .phone-link {
@@ -666,7 +673,6 @@ footer ul li { margin-bottom: 0.5rem; }
 @media (max-width: 768px) {
   section { padding: 3rem 1rem; }
   .header { padding: 0.75rem 1rem; }
-  .logo img { height: 36px; }
   .nav-cta .phone-link { font-size: 0.9rem; }
   .hero { padding: 3.5rem 1rem 3rem; }
   .hero-stats { gap: 1rem; }
@@ -902,6 +908,7 @@ footer ul li { margin-bottom: 0.5rem; }
 <header class="header">
   <div class="logo">
     <img src="images/logo.png" alt="Minneapolis Heating &amp; Air Conditioning logo">
+    <div class="logo-text">Minneapolis <span>HVAC</span></div>
   </div>
   <div class="nav-cta">
     <a href="tel:+16124646492" class="phone-link">
